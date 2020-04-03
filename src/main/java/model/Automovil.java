@@ -6,10 +6,11 @@ import java.util.List;
 public class Automovil {
 
     private String modelo;
-    private List<String> listaOpcional = new LinkedList<>();
+    private List<String> listaOpcional;
 
     public Automovil(Modelo modelo) {
         this.modelo = modelo.getModeloVehiculo();
+        listaOpcional = new LinkedList<>();
     }
 
     public String getModelo() {
