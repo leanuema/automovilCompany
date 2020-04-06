@@ -9,28 +9,22 @@ public class PrecioObjetos {
     private int precioTotal;
 
     public PrecioObjetos() {
-        precio = new HashMap<>();
-        precioTotal = 0;
-    }
+        this.precio = new HashMap<>();
+        this.precio.put("Familiar", 245000);
+        this.precio.put("Coupe", 270000);
+        this.precio.put("Sedan", 230000);
+        this.precio.put("airbag", 7000);
+        this.precio.put("techo corredizo", 12000);
+        this.precio.put("abs", 14000);
+        this.precio.put("aire acondicionado", 20000);
+        this.precio.put("llantas", 12000);    }
 
     public int getPrecioTotal() {
         return this.precioTotal;
     }
 
-    private Map<String, Integer> listaDePrecios() {
-        precio.put("Familiar", 245000);
-        precio.put("Coupe", 270000);
-        precio.put("Sedan", 230000);
-        precio.put("airbag", 7000);
-        precio.put("techo corredizo", 12000);
-        precio.put("abs", 14000);
-        precio.put("aire acondicionado", 20000);
-        precio.put("llantas", 12000);
-        return this.precio;
-    }
-
-    private Integer precioDeCosas(String cosas){
-        return this.precio.get(cosas);
+    private Integer precioDeCosas(String objetos){
+        return this.precio.get(objetos);
     }
 
     public int calcularPrecioFinal(Automovil automovil){
@@ -40,9 +34,9 @@ public class PrecioObjetos {
             precioAccesorios = precioAccesorios + precioDeCosas(i);
         }
         if (precioAccesorios == 0){
-            return precioModelo;
+            return precioTotal = precioModelo;
         }
-            this.precioTotal = precioAccesorios + precioModelo;
+        this.precioTotal = precioAccesorios + precioModelo;
         return precioTotal;
     }
 }
