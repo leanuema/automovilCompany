@@ -1,9 +1,16 @@
 package model;
 
+import org.springframework.stereotype.Service;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.LinkedList;
 import java.util.List;
 
+
 public class Automovil {
+
+    private int id;
 
     private String modelo;
     private List<String> listaOpcional;
@@ -11,6 +18,7 @@ public class Automovil {
     public Automovil(Modelo modelo) {
         this.modelo = modelo.getModeloVehiculo();
         listaOpcional = new LinkedList<>();
+        this.id = 0;
     }
 
     public String getModelo() {
