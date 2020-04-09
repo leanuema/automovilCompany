@@ -1,11 +1,11 @@
 package org.example;
 
-import model.Automovil;
-import model.Modelo;
+import org.example.model.Automovil;
+import org.example.model.Modelo;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
-public class TestAutomobil {
+public class TestAutomovil {
 
     @Test
     public void crear_automovil_modelo_familiar(){

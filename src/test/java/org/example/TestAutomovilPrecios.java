@@ -1,8 +1,8 @@
 package org.example;
 
-import model.Automovil;
-import model.Modelo;
-import model.PrecioObjetos;
+import org.example.model.Automovil;
+import org.example.model.Modelo;
+import org.example.model.PrecioObjetos;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 

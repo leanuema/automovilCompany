@@ -1,9 +1,6 @@
-package model;
+package org.example.model;
 
-import org.springframework.stereotype.Service;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 import java.util.LinkedList;
 import java.util.List;
 

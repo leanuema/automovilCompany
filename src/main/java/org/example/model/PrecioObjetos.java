@@ -1,6 +1,4 @@
-package model;
-
-import org.springframework.stereotype.Service;
+package org.example.model;
 
 import java.util.HashMap;
 
