@@ -5,17 +5,18 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class Automovil {
-
-    private int id;
+public class Automovil{
 
     private String modelo;
     private List<String> listaOpcional;
 
+    public Automovil(){
+
+    }
+
     public Automovil(Modelo modelo) {
         this.modelo = modelo.getModeloVehiculo();
         listaOpcional = new LinkedList<>();
-        this.id = 0;
     }
 
     public String getModelo() {

@@ -32,12 +32,9 @@ public class AutomovilService implements IAutomovilService {
     }
 
     @Override
-    public List<Automovil> buscarAutomovil() {
-        return listaAutomovil;
-    }
-
-    @Override
-    public Automovil crearAutomovil() {
-        return new Automovil(Modelo.FAMILIAR);
+    public Automovil crearAutomovil(String modelo) {
+        Automovil automovil = new Automovil();
+        
+        return null;
     }
 }
