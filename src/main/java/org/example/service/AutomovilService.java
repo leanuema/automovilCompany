@@ -12,7 +12,7 @@ public class AutomovilService implements IAutomovilService {
 
     private List<Automovil> listaAutomovil;
 
-    public AutomovilService(){
+    public AutomovilService() {
         this.listaAutomovil = new ArrayList<>();
 
         Automovil automovil = new Automovil(Modelo.FAMILIAR);
@@ -32,9 +32,23 @@ public class AutomovilService implements IAutomovilService {
     }
 
     @Override
-    public Automovil crearAutomovil(String modelo) {
-        Automovil automovil = new Automovil();
+    public Automovil crearAutomovil(Modelo modelo) {
         
         return null;
+    }
+
+    @Override
+    public List<Automovil> BuscarAutomovil() {
+        return listaAutomovil;
+    }
+
+    @Override
+    public Automovil modificarAutomovil(String modelo) {
+        return null;
+    }
+
+    @Override
+    public void eliminarAutomovil() {
+
     }
 }

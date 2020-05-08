@@ -10,10 +10,6 @@ public class Automovil{
     private String modelo;
     private List<String> listaOpcional;
 
-    public Automovil(){
-
-    }
-
     public Automovil(Modelo modelo) {
         this.modelo = modelo.getModeloVehiculo();
         listaOpcional = new LinkedList<>();
